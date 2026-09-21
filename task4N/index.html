@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 &mdash; Table &amp; Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Assignment tasks">
+    <a href="../task1N/index.html">Task 1</a>
+    <a href="../task2N/index.html">Task 2</a>
+    <a href="../task3N/exercise1/index.html">Task 3</a>
+    <a href="index.html" class="active">Task 4</a>
+  </nav>
+
+  <main class="page">
+
+    <h2 id="grades-heading">Term Grades</h2>
+
+    <table class="grades-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Ronaldo</td>
+          <td>Web Development</td>
+          <td>77</td>
+        </tr>
+        <tr>
+          <td>Databases</td>
+          <td>99</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Messi</td>
+          <td>Web Development</td>
+          <td>91</td>
+        </tr>
+        <tr>
+          <td>Neymar</td>
+          <td>Web Development</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td colspan="2">Class average</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Feedback Form</h2>
+
+    <form class="feedback-form" id="feedback-form" action="#" method="post">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="role">I am a&hellip;</label>
+      <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <fieldset class="radio-group">
+        <legend>Was this course useful?</legend>
+        <label class="radio-label"><input type="radio" name="useful" value="yes" checked> Yes</label>
+        <label class="radio-label"><input type="radio" name="useful" value="no"> No</label>
+      </fieldset>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Tell us what you think"></textarea>
+
+      <button type="submit" class="submit-btn">Send feedback</button>
+
+    </form>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 &mdash; Task 4, Assignment #1.</p>
+  </footer>
+
+</body>
+</html>
