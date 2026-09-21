@@ -1,0 +1,95 @@
+
+/* Common styles */
+* { box-sizing: border-box; }
+body { margin: 0; background-color: #f4f4f4; color: #222; font-family: Arial, sans-serif; }
+.navbar { background-color: #3b4a5a; padding: 10px 5%; border-bottom: 3px solid #5f8fb3; }
+.navbar a { display: inline-block; color: white; text-decoration: none; padding: 9px 14px; margin-right: 5px; border-radius: 3px; }
+.navbar a:hover, .navbar a.active { background-color: #5f8fb3; }
+.page { width: 100%; min-height: calc(100vh - 100px); padding: 40px 8%; background-color: white; }
+.site-footer { padding: 22px 5%; background-color: #222; color: #ddd; text-align: center; }
+.site-footer p { margin: 0; }
+@media (max-width: 700px) { .page { padding: 30px 5%; } .navbar { padding: 10px 4%; } .navbar a { margin-bottom: 4px; } }
+
+body {
+  background-color: #f4f4f4;
+}
+
+.page {
+  min-height: calc(100vh - 100px);
+}
+
+.page h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.page h2 {
+  color: #315d7c;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.page p {
+  margin-bottom: 16px;
+}
+
+.page ol,
+.page ul {
+  max-width: 800px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 18px 20px 18px 40px;
+  border-radius: 4px;
+}
+
+.page li {
+  margin-bottom: 6px;
+}
+
+.page a {
+  color: #315d7c;
+}
+
+.page a:hover {
+  color: #222;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  max-width: 800px;
+  margin: 30px 0;
+  padding: 22px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+}
+
+.profile-photo {
+  width: 120px;
+  max-width: 40%;
+  border-radius: 50%;
+  border: 3px solid #5f8fb3;
+}
+
+.profile-name {
+  margin: 0 0 5px;
+}
+
+.profile-group {
+  margin: 0 0 10px;
+  color: #315d7c;
+  font-weight: bold;
+}
+
+#profile {
+  border-left: 5px solid #5f8fb3;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
